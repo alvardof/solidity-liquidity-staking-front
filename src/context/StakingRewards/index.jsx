@@ -5,7 +5,7 @@ import WalletContext from "../Wallet";
 
 const StakeRewardsContext = createContext();
 
-export function DropFactoryProvider({ children }) {
+export function StakingRewardsProvider({ children }) {
     const address = stakingRewardsInfo.address;
     const abi = stakingRewardsInfo.abi;
     const { signer } = useContext(WalletContext);

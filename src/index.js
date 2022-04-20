@@ -10,9 +10,11 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <WalletProvider>
     <StakeManagerProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <StakingRewardsProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </StakingRewardsProvider>
     </StakeManagerProvider>
   </WalletProvider>,
   document.getElementById("root")
